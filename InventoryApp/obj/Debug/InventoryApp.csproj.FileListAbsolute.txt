@@ -43,3 +43,6 @@ C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\In
 C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
 C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
 C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.UserController.DashboardUC.resources
+C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangUC.resources
+C:\Users\LAB RPL 1\source\repos\Inventory\InventoryApp\InventoryApp\obj\Debug\InventoryApp.UserController.ProfilUC.resources

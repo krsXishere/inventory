@@ -16,6 +16,7 @@ namespace InventoryApp
         public static string id_user;
         public static string nama;
         public static string level_user;
+        Form someForm;
         public FormLogin()
         {
             InitializeComponent();
