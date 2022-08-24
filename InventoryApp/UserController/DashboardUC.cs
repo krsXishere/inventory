@@ -33,5 +33,10 @@ namespace InventoryApp.UserController
             DataTable dataTotalLogAktifitas = helper.GetOneData("select count(id_log) from log_activity");
             label11.Text = dataTotalLogAktifitas.Rows[0][0].ToString() + " Log";
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

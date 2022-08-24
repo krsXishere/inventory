@@ -21,6 +21,9 @@ namespace InventoryApp
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
+            DataTable userLevelLabel = helper.GetOneData("select level_user from users where id_user='" + FormLogin.id_user + "'");
+            user.Text = userLevelLabel.Rows[0][0].ToString();
+
             dashboardUC1.Visible = true;
             dashboardUC1.BringToFront();
         }
@@ -41,6 +44,17 @@ namespace InventoryApp
         {
             profilUC1.Visible = true;
             profilUC1.BringToFront();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Apakah anda akan log-out?", "Peringatan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                this.Hide();
+                FormLogin fl = new FormLogin();
+                fl.Show();
+                helper.LogActivity("logout");
+            }
         }
     }
 }

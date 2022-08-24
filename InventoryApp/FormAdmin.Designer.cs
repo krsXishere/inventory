@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.user = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -38,15 +39,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.profilUC1 = new InventoryApp.UserController.ProfilUC();
             this.dataBarangUC1 = new InventoryApp.UserController.DataBarangUC();
             this.dashboardUC1 = new InventoryApp.UserController.DashboardUC();
-            this.profilUC1 = new InventoryApp.UserController.ProfilUC();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.user);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -60,6 +64,17 @@
             this.panel1.Size = new System.Drawing.Size(56, 447);
             this.panel1.TabIndex = 0;
             // 
+            // user
+            // 
+            this.user.AutoSize = true;
+            this.user.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.ForeColor = System.Drawing.Color.White;
+            this.user.Location = new System.Drawing.Point(9, 349);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(35, 17);
+            this.user.TabIndex = 7;
+            this.user.Text = "User";
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
@@ -71,8 +86,10 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(11, 397);
+            this.button7.Location = new System.Drawing.Point(12, 308);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(35, 38);
             this.button7.TabIndex = 6;
@@ -82,8 +99,10 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(11, 296);
+            this.button6.Location = new System.Drawing.Point(11, 264);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(35, 38);
             this.button6.TabIndex = 5;
@@ -92,8 +111,10 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(11, 252);
+            this.button5.Location = new System.Drawing.Point(11, 220);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(35, 38);
             this.button5.TabIndex = 4;
@@ -102,8 +123,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(11, 208);
+            this.button4.Location = new System.Drawing.Point(11, 176);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 38);
             this.button4.TabIndex = 3;
@@ -112,8 +135,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(11, 164);
+            this.button3.Location = new System.Drawing.Point(11, 132);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 38);
             this.button3.TabIndex = 2;
@@ -121,8 +146,10 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(11, 123);
+            this.button2.Location = new System.Drawing.Point(11, 91);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 38);
             this.button2.TabIndex = 1;
@@ -132,13 +159,22 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(11, 82);
+            this.button1.Location = new System.Drawing.Point(11, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // profilUC1
+            // 
+            this.profilUC1.Location = new System.Drawing.Point(62, 3);
+            this.profilUC1.Name = "profilUC1";
+            this.profilUC1.Size = new System.Drawing.Size(737, 447);
+            this.profilUC1.TabIndex = 3;
             // 
             // dataBarangUC1
             // 
@@ -154,12 +190,18 @@
             this.dashboardUC1.Size = new System.Drawing.Size(737, 447);
             this.dashboardUC1.TabIndex = 1;
             // 
-            // profilUC1
+            // button8
             // 
-            this.profilUC1.Location = new System.Drawing.Point(62, 3);
-            this.profilUC1.Name = "profilUC1";
-            this.profilUC1.Size = new System.Drawing.Size(737, 447);
-            this.profilUC1.TabIndex = 3;
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(2, 381);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(53, 38);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Logout";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // FormAdmin
             // 
@@ -171,10 +213,12 @@
             this.Controls.Add(this.dataBarangUC1);
             this.Controls.Add(this.dashboardUC1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -193,5 +237,7 @@
         private UserController.DashboardUC dashboardUC1;
         private UserController.DataBarangUC dataBarangUC1;
         private UserController.ProfilUC profilUC1;
+        private System.Windows.Forms.Label user;
+        private System.Windows.Forms.Button button8;
     }
 }

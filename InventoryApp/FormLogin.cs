@@ -16,7 +16,6 @@ namespace InventoryApp
         public static string id_user;
         public static string nama;
         public static string level_user;
-        Form someForm;
         public FormLogin()
         {
             InitializeComponent();
@@ -33,25 +32,25 @@ namespace InventoryApp
                     nama = dt.Rows[0][1].ToString();
                     level_user = dt.Rows[0][2].ToString();
 
-                    if(level_user == "admin")
+                    if(level_user == "Admin")
                     {
                         FormAdmin fa = new FormAdmin();
                         this.Hide();
                         fa.Show();
                         helper.LogActivity("login");
-                    } else if(level_user == "manager")
+                    } else if(level_user == "Manager")
                     {
                         FormManager fm = new FormManager();
                         this.Hide();
                         fm.Show();
                         helper.LogActivity("login");
-                    } else if(level_user == "karyawan gudang")
+                    } else if(level_user == "Karyawan Gudang")
                     {
                         FormKaryawanGudang fkg = new FormKaryawanGudang();
                         this.Hide();
                         fkg.Show();
                         helper.LogActivity("login");
-                    } else if(level_user == "karyawan purchasing")
+                    } else if(level_user == "Karyawan Purchasing")
                     {
                         FormKaryawanPurchasing fkp = new FormKaryawanPurchasing();
                         this.Hide();

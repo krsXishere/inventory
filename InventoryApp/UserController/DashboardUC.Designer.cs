@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -75,6 +75,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(737, 447);
             this.panel2.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(2, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(105, 25);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Dashboard";
             // 
             // panel8
             // 
@@ -105,6 +115,7 @@
             this.label11.Size = new System.Drawing.Size(69, 25);
             this.label11.TabIndex = 1;
             this.label11.Text = "label11";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel6
             // 
@@ -279,16 +290,6 @@
             this.label1.Size = new System.Drawing.Size(61, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(2, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Dashboard";
             // 
             // DashboardUC
             // 

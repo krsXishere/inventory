@@ -13,6 +13,7 @@ namespace InventoryApp.UserController
     public partial class ProfilUC : UserControl
     {
         Helper helper = new Helper();
+        int id;
         public ProfilUC()
         {
             InitializeComponent();
@@ -28,27 +29,92 @@ namespace InventoryApp.UserController
 
         private void ProfilUC_Load(object sender, EventArgs e)
         {
-            DataTable dataNama = helper.GetOneData("select nama_user from users");
-            name.Text = dataNama.Rows[0][0].ToString();
-            greeting.Text = "Hai! " + dataNama.Rows[0][0].ToString();
+            DataSet dataPengguna = helper.GetData("select * from users");
+            dataGridView1.DataSource = dataPengguna.Tables[0];
+        }
 
-            DataTable dataAlamat = helper.GetOneData("select alamat_user from users");
-            alamatUser.Text = dataAlamat.Rows[0][0].ToString();
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Simpan Data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                helper.SetData("insert into users(nama_user, alamat_user, telfon_user, username, pass, level_user) values('" + txtNama.Text + "', '" + txtAlamat.Text + "', '" + txtTelfon.Text + "', '" + txtUsername.Text + "', '" + txtPassword.Text + "', '" + txtJabatan.Text + "')", "Berhasil menambahkan data pengguna.");
+                ProfilUC_Load(this, null);
+                ClearAll();
+                helper.LogActivity("menambahkan data user");
+            }
+        }
 
-            DataTable dataTelfon = helper.GetOneData("select telfon_user from users");
-            tlfn.Text = dataTelfon.Rows[0][0].ToString();
+        private void txtTelfon_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtTelfon.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Data telfon harus diisi dengan nomor.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTelfon.Text = txtTelfon.Text.Remove(txtTelfon.Text.Length - 1);
+            }
+        }
 
-            DataTable dataTglBergabung = helper.GetOneData("select tanggal_bergabung from users");
-            tglbergabung.Text = dataTglBergabung.Rows[0][0].ToString();
+        private void ClearAll()
+        {
+            txtNama.Clear();
+            txtAlamat.Clear();
+            txtTelfon.Clear();
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtJabatan.Text = "";
+            txtJabatan.SelectedIndex = -1;
+        }
 
-            DataTable dataUsername = helper.GetOneData("select username from users");
-            userName.Text = dataUsername.Rows[0][0].ToString();
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
 
-            DataTable dataPassword = helper.GetOneData("select pass from users");
-            password.Text = dataPassword.Rows[0][0].ToString();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Simpan perubahan data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                helper.SetData("update users set nama_user='" + txtNama.Text + "', alamat_user='" + txtAlamat.Text + "', telfon_user='" + txtTelfon.Text + "', username='" + txtUsername.Text + "', pass='" + txtPassword.Text + "', level_user='" + txtJabatan.Text + "' where id_user='"+id+"'", "Berhasil mengedit data pengguna.");
+                ProfilUC_Load(this, null);
+                ClearAll();
+                helper.LogActivity("mengedit data user");
+            }
+        }
 
-            DataTable dataJabatan = helper.GetOneData("select level_user from users");
-            jabatan.Text = dataJabatan.Rows[0][0].ToString();
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Hapus data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                helper.SetData("delete from users where id_user='"+id+"'", "Berhasil menghapus data pengguna.");
+                ProfilUC_Load(this, null);
+                ClearAll();
+                helper.LogActivity("menghapus data user");
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                txtNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtAlamat.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtTelfon.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtUsername.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtPassword.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtJabatan.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+            }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataSet data = helper.GetData("select * from users where nama_user like '%"+txtSearch.Text+"%' or alamat_user like '%"+txtSearch.Text+"%'");
+            dataGridView1.DataSource = data.Tables[0];
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DataSet data = helper.GetData("select * from users where nama_user like '%" + txtSearch.Text + "%' or alamat_user like '%" + txtSearch.Text + "%'");
+            dataGridView1.DataSource = data.Tables[0];
         }
     }
 }
