@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,23 +70,11 @@
     <Compile Include="FormKaryawanGudang.Designer.cs">
       <DependentUpon>FormKaryawanGudang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormKaryawanPurchasing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormKaryawanPurchasing.Designer.cs">
-      <DependentUpon>FormKaryawanPurchasing.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormManager.Designer.cs">
-      <DependentUpon>FormManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Program.cs" />
@@ -85,11 +85,35 @@
     <Compile Include="UserController\DashboardUC.Designer.cs">
       <DependentUpon>DashboardUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserController\DataBarangKeluarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\DataBarangKeluarUC.Designer.cs">
+      <DependentUpon>DataBarangKeluarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\DataBarangMasukUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\DataBarangMasukUC.Designer.cs">
+      <DependentUpon>DataBarangMasukUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\DataBarangRusakUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\DataBarangRusakUC.Designer.cs">
+      <DependentUpon>DataBarangRusakUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserController\DataBarangUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserController\DataBarangUC.Designer.cs">
       <DependentUpon>DataBarangUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\DataLaporan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\DataLaporan.Designer.cs">
+      <DependentUpon>DataLaporan.cs</DependentUpon>
     </Compile>
     <Compile Include="UserController\ProfilUC.cs">
       <SubType>UserControl</SubType>
@@ -97,20 +121,18 @@
     <Compile Include="UserController\ProfilUC.Designer.cs">
       <DependentUpon>ProfilUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKaryawanGudang.resx">
       <DependentUpon>FormKaryawanGudang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKaryawanPurchasing.resx">
-      <DependentUpon>FormKaryawanPurchasing.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormManager.resx">
-      <DependentUpon>FormManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,8 +146,20 @@
     <EmbeddedResource Include="UserController\DashboardUC.resx">
       <DependentUpon>DashboardUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserController\DataBarangKeluarUC.resx">
+      <DependentUpon>DataBarangKeluarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\DataBarangMasukUC.resx">
+      <DependentUpon>DataBarangMasukUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\DataBarangRusakUC.resx">
+      <DependentUpon>DataBarangRusakUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserController\DataBarangUC.resx">
       <DependentUpon>DataBarangUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\DataLaporan.resx">
+      <DependentUpon>DataLaporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserController\ProfilUC.resx">
       <DependentUpon>ProfilUC.cs</DependentUpon>
@@ -143,6 +177,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

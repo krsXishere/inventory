@@ -38,23 +38,11 @@ namespace InventoryApp
                         this.Hide();
                         fa.Show();
                         helper.LogActivity("login");
-                    } else if(level_user == "Manager")
-                    {
-                        FormManager fm = new FormManager();
-                        this.Hide();
-                        fm.Show();
-                        helper.LogActivity("login");
                     } else if(level_user == "Karyawan Gudang")
                     {
                         FormKaryawanGudang fkg = new FormKaryawanGudang();
                         this.Hide();
                         fkg.Show();
-                        helper.LogActivity("login");
-                    } else if(level_user == "Karyawan Purchasing")
-                    {
-                        FormKaryawanPurchasing fkp = new FormKaryawanPurchasing();
-                        this.Hide();
-                        fkp.Show();
                         helper.LogActivity("login");
                     } else { }
                 } else

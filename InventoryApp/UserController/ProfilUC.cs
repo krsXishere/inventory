@@ -27,7 +27,7 @@ namespace InventoryApp.UserController
             fl.Show();
         }
 
-        private void ProfilUC_Load(object sender, EventArgs e)
+        public void ProfilUC_Load(object sender, EventArgs e)
         {
             DataSet dataPengguna = helper.GetData("select * from users");
             dataGridView1.DataSource = dataPengguna.Tables[0];
@@ -107,14 +107,16 @@ namespace InventoryApp.UserController
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            DataSet data = helper.GetData("select * from users where nama_user like '%"+txtSearch.Text+"%' or alamat_user like '%"+txtSearch.Text+"%'");
+            DataSet data = helper.GetData("select * from users where nama_user like '%" + txtSearch.Text + "%' or alamat_user like '%" + txtSearch.Text + "%' or level_user like '%" + txtSearch.Text + "%'");
             dataGridView1.DataSource = data.Tables[0];
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            DataSet data = helper.GetData("select * from users where nama_user like '%" + txtSearch.Text + "%' or alamat_user like '%" + txtSearch.Text + "%'");
-            dataGridView1.DataSource = data.Tables[0];
+            string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            Console.WriteLine(theDate);
+            DataSet dataLog = helper.GetData("select * from users where tanggal_bergabung='" + dateTimePicker1.Text + "'");
+            dataGridView1.DataSource = dataLog.Tables[0];
         }
     }
 }

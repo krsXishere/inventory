@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace InventoryApp
+namespace InventoryApp.UserController
 {
-    public partial class FormKaryawanPurchasing : Form
+    public partial class DataLaporan : UserControl
     {
-        public FormKaryawanPurchasing()
+        public DataLaporan()
         {
             InitializeComponent();
         }

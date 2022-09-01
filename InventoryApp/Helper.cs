@@ -14,7 +14,7 @@ namespace InventoryApp
         public SqlConnection GetConnection()
         {
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = @"Data Source=DESKTOP-V9RJLL8;Initial Catalog=inventory-app;Integrated Security=True";
+            connection.ConnectionString = @"Data Source=DESKTOP-5DHI6E5\MSSQLSERVER01;Initial Catalog=inventory;Integrated Security=True";
 
             return connection;
         }
