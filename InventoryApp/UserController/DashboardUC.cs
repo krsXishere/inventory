@@ -20,7 +20,7 @@ namespace InventoryApp.UserController
 
         public void DashboardUC_Load(object sender, EventArgs e)
         {
-            DataSet dataLog = helper.GetData("select nama_user, activity, tanggal from log_activity, users where log_activity.id_user = users.id_user");
+            DataSet dataLog = helper.GetData("select nama_user, username, activity, tanggal from log_activity, users where log_activity.id_user = users.id_user and (tanggal='"+DateTime.Now+"')");
             dataGridView1.DataSource = dataLog.Tables[0];
             DataTable totalBarang = helper.GetOneData("select count(id_barang) from barang");
             label1.Text = totalBarang.Rows[0][0].ToString() + " Barang";
@@ -48,11 +48,6 @@ namespace InventoryApp.UserController
             Console.WriteLine(theDate);
             DataSet dataLog = helper.GetData("select nama_user, activity, tanggal from log_activity, users where log_activity.id_user = users.id_user and tanggal='" + dateTimePicker1.Text + "'");
             dataGridView1.DataSource = dataLog.Tables[0];
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

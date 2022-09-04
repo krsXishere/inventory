@@ -47,15 +47,16 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -82,7 +83,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(737, 447);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel1
             // 
@@ -258,6 +258,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nama_user,
+            this.username,
             this.activity,
             this.tanggal});
             this.dataGridView1.Location = new System.Drawing.Point(0, 51);
@@ -265,27 +266,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(412, 243);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // nama_user
-            // 
-            this.nama_user.DataPropertyName = "nama_user";
-            this.nama_user.HeaderText = "Nama Pengguna";
-            this.nama_user.Name = "nama_user";
-            this.nama_user.ReadOnly = true;
-            // 
-            // activity
-            // 
-            this.activity.DataPropertyName = "activity";
-            this.activity.HeaderText = "Aktifitas";
-            this.activity.Name = "activity";
-            this.activity.ReadOnly = true;
-            // 
-            // tanggal
-            // 
-            this.tanggal.DataPropertyName = "tanggal";
-            this.tanggal.HeaderText = "Tanggal Aktifitas";
-            this.tanggal.Name = "tanggal";
-            this.tanggal.ReadOnly = true;
             // 
             // panel5
             // 
@@ -347,6 +327,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
+            // nama_user
+            // 
+            this.nama_user.DataPropertyName = "nama_user";
+            this.nama_user.HeaderText = "Nama Pengguna";
+            this.nama_user.Name = "nama_user";
+            this.nama_user.ReadOnly = true;
+            // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "Username";
+            this.username.Name = "username";
+            this.username.ReadOnly = true;
+            // 
+            // activity
+            // 
+            this.activity.DataPropertyName = "activity";
+            this.activity.HeaderText = "Aktifitas";
+            this.activity.Name = "activity";
+            this.activity.ReadOnly = true;
+            // 
+            // tanggal
+            // 
+            this.tanggal.DataPropertyName = "tanggal";
+            this.tanggal.HeaderText = "Tanggal Aktifitas";
+            this.tanggal.Name = "tanggal";
+            this.tanggal.ReadOnly = true;
+            // 
             // DashboardUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,9 +396,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nama_user;
-        private System.Windows.Forms.DataGridViewTextBoxColumn activity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tanggal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
@@ -406,5 +411,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nama_user;
+        private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tanggal;
     }
 }

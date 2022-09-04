@@ -43,34 +43,54 @@ namespace InventoryApp.UserController
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Simpan data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+           if(txtKodeBarang.Text != "" && txtNamaBarang.Text != "" && txtStatusBarang.Text != "" && txtStokBarang.Text != "" && txtKondisiBarang.Text != "")
             {
-                helper.SetData("insert into barang(id_user, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang) values('" + FormLogin.id_user + "', '" + txtKodeBarang.Text + "', '" + txtNamaBarang.Text + "', '" + txtStatusBarang.Text + "', '" + txtStokBarang.Text + "', '" + txtKondisiBarang.Text + "')", "Berhasil menambahkan data barang.");
-                DataBarangUC_Load(this, null);
-                ClearAll();
-                helper.LogActivity("menambahkan data barang");
+                if (MessageBox.Show("Simpan data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    helper.SetData("insert into barang(id_user, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang) values('" + FormLogin.id_user + "', '" + txtKodeBarang.Text + "', '" + txtNamaBarang.Text + "', '" + txtStatusBarang.Text + "', '" + txtStokBarang.Text + "', '" + txtKondisiBarang.Text + "')", "Berhasil menambahkan data barang.");
+                    DataBarangUC_Load(this, null);
+                    ClearAll();
+                    helper.LogActivity("menambahkan data barang");
+                }
+            } else
+            {
+                helper.FillAllFields();
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Simpan perubahan data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if(txtKodeBarang.Text != "" && txtNamaBarang.Text != "" && txtStatusBarang.Text != "" && txtStokBarang.Text != "" && txtKondisiBarang.Text != "")
             {
-                helper.SetData("update barang set kode_barang='" + txtKodeBarang.Text + "', nama_barang='" + txtNamaBarang.Text + "', status_barang='" + txtStatusBarang.Text + "', stok_barang='" + txtStokBarang.Text + "', kondisi_barang='" + txtKondisiBarang.Text + "' where id_barang='" + id + "'", "Berhasil mengedit data barang.");
-                DataBarangUC_Load(this, null);
-                ClearAll();
-                helper.LogActivity("mengedit data barang");
+                if (MessageBox.Show("Simpan perubahan data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    helper.SetData("update barang set kode_barang='" + txtKodeBarang.Text + "', nama_barang='" + txtNamaBarang.Text + "', status_barang='" + txtStatusBarang.Text + "', stok_barang='" + txtStokBarang.Text + "', kondisi_barang='" + txtKondisiBarang.Text + "' where id_barang='" + id + "'", "Berhasil mengedit data barang.");
+                    DataBarangUC_Load(this, null);
+                    ClearAll();
+                    helper.LogActivity("mengedit data barang");
+                }
+
+            } else
+            {
+                helper.FillAllFields();
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Hapus data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if(txtKodeBarang.Text != "" && txtNamaBarang.Text != "" && txtStatusBarang.Text != "" && txtStokBarang.Text != "" && txtKondisiBarang.Text != "")
             {
-                helper.SetData("delete from barang where id_barang='" + id + "'", "Berhasil menghapus data barang.");
-                DataBarangUC_Load(this, null);
-                ClearAll();
-                helper.LogActivity("menghapus data barang");
+                if (MessageBox.Show("Hapus data?", "Konfirmasi", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    helper.SetData("delete from barang where id_barang='" + id + "'", "Berhasil menghapus data barang.");
+                    DataBarangUC_Load(this, null);
+                    ClearAll();
+                    helper.LogActivity("menghapus data barang");
+                }
+
+            } else
+            {
+                helper.FillAllFields();
             }
         }
 

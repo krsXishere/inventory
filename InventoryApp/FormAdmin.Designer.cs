@@ -33,30 +33,30 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.user = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataLaporan1 = new InventoryApp.UserController.DataLaporan();
+            this.dataBarangRusakUC1 = new InventoryApp.UserController.DataBarangRusakUC();
             this.dataBarangKeluarUC1 = new InventoryApp.UserController.DataBarangKeluarUC();
             this.dataBarangMasukUC1 = new InventoryApp.UserController.DataBarangMasukUC();
             this.profilUC1 = new InventoryApp.UserController.ProfilUC();
             this.dataBarangUC1 = new InventoryApp.UserController.DataBarangUC();
             this.dashboardUC1 = new InventoryApp.UserController.DashboardUC();
-            this.dataBarangRusakUC1 = new InventoryApp.UserController.DataBarangRusakUC();
-            this.dataLaporan1 = new InventoryApp.UserController.DataLaporan();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.user);
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -74,7 +74,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(9, 380);
+            this.button8.Location = new System.Drawing.Point(13, 380);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(35, 38);
             this.button8.TabIndex = 10;
@@ -104,14 +104,6 @@
             this.user.Size = new System.Drawing.Size(35, 17);
             this.user.TabIndex = 7;
             this.user.Text = "User";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(11, 9);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(35, 35);
-            this.panel10.TabIndex = 1;
             // 
             // button7
             // 
@@ -190,6 +182,20 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataLaporan1
+            // 
+            this.dataLaporan1.Location = new System.Drawing.Point(62, 3);
+            this.dataLaporan1.Name = "dataLaporan1";
+            this.dataLaporan1.Size = new System.Drawing.Size(737, 447);
+            this.dataLaporan1.TabIndex = 7;
+            // 
+            // dataBarangRusakUC1
+            // 
+            this.dataBarangRusakUC1.Location = new System.Drawing.Point(62, 3);
+            this.dataBarangRusakUC1.Name = "dataBarangRusakUC1";
+            this.dataBarangRusakUC1.Size = new System.Drawing.Size(737, 447);
+            this.dataBarangRusakUC1.TabIndex = 6;
+            // 
             // dataBarangKeluarUC1
             // 
             this.dataBarangKeluarUC1.Location = new System.Drawing.Point(62, 3);
@@ -225,19 +231,16 @@
             this.dashboardUC1.Size = new System.Drawing.Size(737, 447);
             this.dashboardUC1.TabIndex = 1;
             // 
-            // dataBarangRusakUC1
+            // label2
             // 
-            this.dataBarangRusakUC1.Location = new System.Drawing.Point(62, 3);
-            this.dataBarangRusakUC1.Name = "dataBarangRusakUC1";
-            this.dataBarangRusakUC1.Size = new System.Drawing.Size(737, 447);
-            this.dataBarangRusakUC1.TabIndex = 6;
-            // 
-            // dataLaporan1
-            // 
-            this.dataLaporan1.Location = new System.Drawing.Point(62, 3);
-            this.dataLaporan1.Name = "dataLaporan1";
-            this.dataLaporan1.Size = new System.Drawing.Size(737, 447);
-            this.dataLaporan1.TabIndex = 7;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(7, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 32);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "KP";
             // 
             // FormAdmin
             // 
@@ -274,7 +277,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel10;
         private UserController.DashboardUC dashboardUC1;
         private UserController.DataBarangUC dataBarangUC1;
         private UserController.ProfilUC profilUC1;
@@ -285,5 +287,6 @@
         private UserController.DataBarangRusakUC dataBarangRusakUC1;
         private System.Windows.Forms.Button button8;
         private UserController.DataLaporan dataLaporan1;
+        private System.Windows.Forms.Label label2;
     }
 }

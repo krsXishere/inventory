@@ -31,8 +31,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport21 = new InventoryApp.CrystalReport2();
             this.CrystalReport22 = new InventoryApp.CrystalReport2();
+            this.CrystalReport21 = new InventoryApp.CrystalReport2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 

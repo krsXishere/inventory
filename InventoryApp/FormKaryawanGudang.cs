@@ -65,7 +65,7 @@ namespace InventoryApp
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Apakah anda akan log-out?", "Peringatan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Apakah anda akan keluar?", "Peringatan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 this.Hide();
                 FormLogin fl = new FormLogin();
@@ -78,6 +78,13 @@ namespace InventoryApp
         {
             dataLaporan1.Visible = true;
             dataLaporan1.BringToFront();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            dataBarangRusakUC1.Visible = true;
+            dataBarangRusakUC1.BringToFront();
+            dataBarangRusakUC1.DataBarangRusakUC_Load(this, null);
         }
     }
 }
