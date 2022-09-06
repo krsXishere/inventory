@@ -33,15 +33,14 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
             this.id_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nama_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stok_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kondisi_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tanggal_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -89,10 +88,11 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_barang,
-            this.nama_user,
             this.kode_barang,
             this.nama_barang,
             this.status_barang,
@@ -101,21 +101,26 @@
             this.tanggal_barang});
             this.dataGridView1.Location = new System.Drawing.Point(0, 50);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(737, 270);
             this.dataGridView1.TabIndex = 1;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(174, 25);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Data Barang Rusak";
+            // 
             // id_barang
             // 
-            this.id_barang.DataPropertyName = "id_barang";
+            this.id_barang.DataPropertyName = "id_log_barang";
             this.id_barang.HeaderText = "ID Barang";
             this.id_barang.Name = "id_barang";
             this.id_barang.Visible = false;
-            // 
-            // nama_user
-            // 
-            this.nama_user.DataPropertyName = "nama_user";
-            this.nama_user.HeaderText = "Nama Pegawai";
-            this.nama_user.Name = "nama_user";
             // 
             // kode_barang
             // 
@@ -153,16 +158,6 @@
             this.tanggal_barang.HeaderText = "Tanggal Barang";
             this.tanggal_barang.Name = "tanggal_barang";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 25);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Data Barang Rusak";
-            // 
             // DataBarangRusakUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,14 +182,13 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_barang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nama_user;
         private System.Windows.Forms.DataGridViewTextBoxColumn kode_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn nama_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn status_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn stok_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn kondisi_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn tanggal_barang;
-        private System.Windows.Forms.Label label12;
     }
 }

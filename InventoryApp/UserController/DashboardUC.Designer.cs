@@ -47,16 +47,16 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -255,6 +255,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nama_user,
@@ -264,8 +266,37 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 51);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(412, 243);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // nama_user
+            // 
+            this.nama_user.DataPropertyName = "nama_user";
+            this.nama_user.HeaderText = "Nama Pengguna";
+            this.nama_user.Name = "nama_user";
+            this.nama_user.ReadOnly = true;
+            // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "Username";
+            this.username.Name = "username";
+            this.username.ReadOnly = true;
+            // 
+            // activity
+            // 
+            this.activity.DataPropertyName = "activity";
+            this.activity.HeaderText = "Aktifitas";
+            this.activity.Name = "activity";
+            this.activity.ReadOnly = true;
+            // 
+            // tanggal
+            // 
+            this.tanggal.DataPropertyName = "tanggal";
+            this.tanggal.HeaderText = "Tanggal Aktifitas";
+            this.tanggal.Name = "tanggal";
+            this.tanggal.ReadOnly = true;
             // 
             // panel5
             // 
@@ -326,34 +357,6 @@
             this.label1.Size = new System.Drawing.Size(61, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
-            // 
-            // nama_user
-            // 
-            this.nama_user.DataPropertyName = "nama_user";
-            this.nama_user.HeaderText = "Nama Pengguna";
-            this.nama_user.Name = "nama_user";
-            this.nama_user.ReadOnly = true;
-            // 
-            // username
-            // 
-            this.username.DataPropertyName = "username";
-            this.username.HeaderText = "Username";
-            this.username.Name = "username";
-            this.username.ReadOnly = true;
-            // 
-            // activity
-            // 
-            this.activity.DataPropertyName = "activity";
-            this.activity.HeaderText = "Aktifitas";
-            this.activity.Name = "activity";
-            this.activity.ReadOnly = true;
-            // 
-            // tanggal
-            // 
-            this.tanggal.DataPropertyName = "tanggal";
-            this.tanggal.HeaderText = "Tanggal Aktifitas";
-            this.tanggal.Name = "tanggal";
-            this.tanggal.ReadOnly = true;
             // 
             // DashboardUC
             // 

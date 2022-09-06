@@ -22,7 +22,7 @@ namespace InventoryApp.UserController
         {
             DataSet dataLog = helper.GetData("select nama_user, username, activity, tanggal from log_activity, users where log_activity.id_user = users.id_user and (tanggal='"+DateTime.Now+"')");
             dataGridView1.DataSource = dataLog.Tables[0];
-            DataTable totalBarang = helper.GetOneData("select count(id_barang) from barang");
+            DataTable totalBarang = helper.GetOneData("select sum(stok_barang) from barang");
             label1.Text = totalBarang.Rows[0][0].ToString() + " Barang";
             DataTable dataJumlahPegawai = helper.GetOneData("select count(id_user) from users");
             label6.Text = dataJumlahPegawai.Rows[0][0].ToString() + " Pegawai";

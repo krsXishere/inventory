@@ -55,6 +55,18 @@ namespace InventoryApp
             MessageBox.Show(""+message+"", "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void SetDataWithOutMessageBox(String query)
+        {
+            SqlConnection connection = GetConnection();
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            connection.Open();
+            command.CommandType = CommandType.Text;
+            command.CommandText = query;
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
         public DataTable Login(String username, String password)
         {
             SqlConnection connection = GetConnection();

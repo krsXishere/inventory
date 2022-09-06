@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.user = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.profilUC1 = new InventoryApp.UserController.ProfilUC();
             this.dataBarangUC1 = new InventoryApp.UserController.DataBarangUC();
             this.dashboardUC1 = new InventoryApp.UserController.DashboardUC();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(56, 447);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(7, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 32);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "KP";
             // 
             // button8
             // 
@@ -230,17 +241,6 @@
             this.dashboardUC1.Name = "dashboardUC1";
             this.dashboardUC1.Size = new System.Drawing.Size(737, 447);
             this.dashboardUC1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 32);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "KP";
             // 
             // FormAdmin
             // 

@@ -62,5 +62,17 @@ namespace InventoryApp
         {
             wrong.Visible = false;
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(78, 123, 228);
+            button1.ForeColor = Color.White;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.White;
+            button1.ForeColor = Color.Black;
+        }
     }
 }

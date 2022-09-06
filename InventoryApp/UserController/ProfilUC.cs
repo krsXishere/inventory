@@ -88,7 +88,7 @@ namespace InventoryApp.UserController
                 }
             } else
             {
-                helper.FillAllFields();
+                MessageBox.Show("Pilih data untuk diedit.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -105,7 +105,7 @@ namespace InventoryApp.UserController
                 }
             } else
             {
-                helper.FillAllFields();
+                MessageBox.Show("Pilih data untuk dihapus.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

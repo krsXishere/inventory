@@ -50,7 +50,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.id_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama_user = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nama_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status_barang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,7 +137,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 26;
-            this.button1.Text = "Tambah";
+            this.button1.Text = "Simpan";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -290,10 +289,11 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_barang,
-            this.nama_user,
             this.kode_barang,
             this.nama_barang,
             this.status_barang,
@@ -302,6 +302,8 @@
             this.tanggal_barang});
             this.dataGridView1.Location = new System.Drawing.Point(0, 64);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(401, 199);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -311,49 +313,50 @@
             this.id_barang.DataPropertyName = "id_barang";
             this.id_barang.HeaderText = "ID Barang";
             this.id_barang.Name = "id_barang";
+            this.id_barang.ReadOnly = true;
             this.id_barang.Visible = false;
-            // 
-            // nama_user
-            // 
-            this.nama_user.DataPropertyName = "nama_user";
-            this.nama_user.HeaderText = "Nama Pegawai";
-            this.nama_user.Name = "nama_user";
             // 
             // kode_barang
             // 
             this.kode_barang.DataPropertyName = "kode_barang";
             this.kode_barang.HeaderText = "Kode Barang";
             this.kode_barang.Name = "kode_barang";
+            this.kode_barang.ReadOnly = true;
             // 
             // nama_barang
             // 
             this.nama_barang.DataPropertyName = "nama_barang";
             this.nama_barang.HeaderText = "Nama Barang";
             this.nama_barang.Name = "nama_barang";
+            this.nama_barang.ReadOnly = true;
             // 
             // status_barang
             // 
             this.status_barang.DataPropertyName = "status_barang";
             this.status_barang.HeaderText = "Status Barang";
             this.status_barang.Name = "status_barang";
+            this.status_barang.ReadOnly = true;
             // 
             // stok_barang
             // 
             this.stok_barang.DataPropertyName = "stok_barang";
             this.stok_barang.HeaderText = "Stok Barang";
             this.stok_barang.Name = "stok_barang";
+            this.stok_barang.ReadOnly = true;
             // 
             // kondisi_barang
             // 
             this.kondisi_barang.DataPropertyName = "kondisi_barang";
             this.kondisi_barang.HeaderText = "Kondisi Barang";
             this.kondisi_barang.Name = "kondisi_barang";
+            this.kondisi_barang.ReadOnly = true;
             // 
             // tanggal_barang
             // 
             this.tanggal_barang.DataPropertyName = "tanggal_barang";
             this.tanggal_barang.HeaderText = "Tanggal Barang";
             this.tanggal_barang.Name = "tanggal_barang";
+            this.tanggal_barang.ReadOnly = true;
             // 
             // DataBarangUC
             // 
@@ -399,7 +402,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_barang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nama_user;
         private System.Windows.Forms.DataGridViewTextBoxColumn kode_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn nama_barang;
         private System.Windows.Forms.DataGridViewTextBoxColumn status_barang;
