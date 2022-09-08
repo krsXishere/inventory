@@ -16,5 +16,15 @@ namespace InventoryApp.UserController
         {
             InitializeComponent();
         }
+
+        private void DataLaporan2_InitReport(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataLaporan1_InitReport(object sender, EventArgs e)
+        {
+
+        }
     }
 }

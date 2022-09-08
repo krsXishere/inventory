@@ -31,8 +31,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport22 = new InventoryApp.CrystalReport2();
-            this.CrystalReport21 = new InventoryApp.CrystalReport2();
+            this.DataLaporanCR1 = new InventoryApp.Report.DataLaporanCR();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,9 +61,11 @@
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport22;
+            this.crystalReportViewer1.ReportSource = this.DataLaporanCR1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(736, 409);
             this.crystalReportViewer1.TabIndex = 8;
+            // 
+            // DataLaporan3
             // 
             // DataLaporan
             // 
@@ -85,7 +86,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CrystalReport2 CrystalReport21;
-        private CrystalReport2 CrystalReport22;
+        private Report.DataLaporanCR DataLaporanCR1;
     }
 }

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.user = new System.Windows.Forms.Label();
@@ -48,12 +48,13 @@
             this.dataBarangUC1 = new InventoryApp.UserController.DataBarangUC();
             this.dashboardUC1 = new InventoryApp.UserController.DashboardUC();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.user);
@@ -68,16 +69,16 @@
             this.panel1.Size = new System.Drawing.Size(56, 447);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 32);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "KP";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-7, -8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // button8
             // 
@@ -85,7 +86,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(13, 380);
+            this.button8.Location = new System.Drawing.Point(11, 382);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(35, 38);
             this.button8.TabIndex = 10;
@@ -98,7 +99,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(12, 221);
+            this.button3.Location = new System.Drawing.Point(12, 233);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 38);
             this.button3.TabIndex = 9;
@@ -110,7 +111,7 @@
             this.user.AutoSize = true;
             this.user.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user.ForeColor = System.Drawing.Color.White;
-            this.user.Location = new System.Drawing.Point(9, 421);
+            this.user.Location = new System.Drawing.Point(6, 422);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(35, 17);
             this.user.TabIndex = 7;
@@ -122,7 +123,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(13, 309);
+            this.button7.Location = new System.Drawing.Point(11, 321);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(35, 38);
             this.button7.TabIndex = 6;
@@ -135,7 +136,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(12, 265);
+            this.button6.Location = new System.Drawing.Point(12, 277);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(35, 38);
             this.button6.TabIndex = 5;
@@ -148,7 +149,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(12, 177);
+            this.button5.Location = new System.Drawing.Point(12, 188);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(35, 38);
             this.button5.TabIndex = 4;
@@ -161,7 +162,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(12, 133);
+            this.button4.Location = new System.Drawing.Point(12, 145);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(35, 38);
             this.button4.TabIndex = 3;
@@ -173,7 +174,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(12, 91);
+            this.button2.Location = new System.Drawing.Point(12, 103);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 38);
             this.button2.TabIndex = 1;
@@ -186,7 +187,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(123)))), ((int)(((byte)(228)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(11, 50);
+            this.button1.Location = new System.Drawing.Point(11, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 0;
@@ -196,6 +197,7 @@
             // dataLaporan1
             // 
             this.dataLaporan1.Location = new System.Drawing.Point(62, 3);
+            this.dataLaporan1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataLaporan1.Name = "dataLaporan1";
             this.dataLaporan1.Size = new System.Drawing.Size(737, 447);
             this.dataLaporan1.TabIndex = 7;
@@ -203,6 +205,7 @@
             // dataBarangRusakUC1
             // 
             this.dataBarangRusakUC1.Location = new System.Drawing.Point(62, 3);
+            this.dataBarangRusakUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataBarangRusakUC1.Name = "dataBarangRusakUC1";
             this.dataBarangRusakUC1.Size = new System.Drawing.Size(737, 447);
             this.dataBarangRusakUC1.TabIndex = 6;
@@ -210,6 +213,7 @@
             // dataBarangKeluarUC1
             // 
             this.dataBarangKeluarUC1.Location = new System.Drawing.Point(62, 3);
+            this.dataBarangKeluarUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataBarangKeluarUC1.Name = "dataBarangKeluarUC1";
             this.dataBarangKeluarUC1.Size = new System.Drawing.Size(737, 447);
             this.dataBarangKeluarUC1.TabIndex = 5;
@@ -217,6 +221,7 @@
             // dataBarangMasukUC1
             // 
             this.dataBarangMasukUC1.Location = new System.Drawing.Point(62, 3);
+            this.dataBarangMasukUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataBarangMasukUC1.Name = "dataBarangMasukUC1";
             this.dataBarangMasukUC1.Size = new System.Drawing.Size(737, 447);
             this.dataBarangMasukUC1.TabIndex = 4;
@@ -224,6 +229,7 @@
             // profilUC1
             // 
             this.profilUC1.Location = new System.Drawing.Point(62, 3);
+            this.profilUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.profilUC1.Name = "profilUC1";
             this.profilUC1.Size = new System.Drawing.Size(737, 447);
             this.profilUC1.TabIndex = 3;
@@ -231,6 +237,7 @@
             // dataBarangUC1
             // 
             this.dataBarangUC1.Location = new System.Drawing.Point(62, 3);
+            this.dataBarangUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataBarangUC1.Name = "dataBarangUC1";
             this.dataBarangUC1.Size = new System.Drawing.Size(737, 447);
             this.dataBarangUC1.TabIndex = 2;
@@ -238,6 +245,7 @@
             // dashboardUC1
             // 
             this.dashboardUC1.Location = new System.Drawing.Point(62, 3);
+            this.dashboardUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dashboardUC1.Name = "dashboardUC1";
             this.dashboardUC1.Size = new System.Drawing.Size(737, 447);
             this.dashboardUC1.TabIndex = 1;
@@ -264,6 +272,7 @@
             this.Load += new System.EventHandler(this.FormAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +296,6 @@
         private UserController.DataBarangRusakUC dataBarangRusakUC1;
         private System.Windows.Forms.Button button8;
         private UserController.DataLaporan dataLaporan1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

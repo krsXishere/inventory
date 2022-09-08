@@ -102,3 +102,117 @@ C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO-BACKUP\PBO\InventoryApp
 C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO-BACKUP\PBO\InventoryApp\bin\Debug\stdole.dll
 C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO-BACKUP\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataLaporan.resources
 C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO-BACKUP\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\bin\Debug\stdole.dll
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.FormAdmin.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.FormKaryawanGudang.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.FormLogin.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DashboardUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangKeluarUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangMasukUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangRusakUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataLaporan.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.ProfilUC.resources
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\chandra\Documents\ikis\PBO\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\bin\Debug\stdole.dll
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.FormAdmin.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.FormKaryawanGudang.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.FormLogin.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DashboardUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangKeluarUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangMasukUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangRusakUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataLaporan.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.ProfilUC.resources
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\RPL NESAS\Documents\XII-RPL\Krisna Purnama\pbo-beres\PBO\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\bin\Debug\stdole.dll
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.FormAdmin.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.FormKaryawanGudang.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.FormLogin.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DashboardUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangKeluarUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangMasukUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangRusakUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataBarangUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.DataLaporan.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.UserController.ProfilUC.resources
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\LAB RPL 1\Documents\XII-RPL1\Krisna-Purnama\PBO\PBO\InventoryApp\obj\Debug\InventoryApp.pdb

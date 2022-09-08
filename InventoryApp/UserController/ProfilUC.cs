@@ -19,14 +19,6 @@ namespace InventoryApp.UserController
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormAdmin fa = new FormAdmin();
-            fa.Hide();
-            FormLogin fl = new FormLogin();
-            fl.Show();
-        }
-
         public void ProfilUC_Load(object sender, EventArgs e)
         {
             DataSet dataPengguna = helper.GetData("select * from users");
@@ -125,7 +117,7 @@ namespace InventoryApp.UserController
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            DataSet data = helper.GetData("select * from users where nama_user like '%" + txtSearch.Text + "%' or alamat_user like '%" + txtSearch.Text + "%' or level_user like '%" + txtSearch.Text + "%'");
+            DataSet data = helper.GetData("select * from users where nama_user like '%" + txtSearch.Text + "%' or alamat_user like '%" + txtSearch.Text + "%' or level_user like '%" + txtSearch.Text + "%' or username like '%" + txtSearch.Text + "%'");
             dataGridView1.DataSource = data.Tables[0];
         }
 

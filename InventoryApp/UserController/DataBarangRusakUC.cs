@@ -20,7 +20,8 @@ namespace InventoryApp.UserController
 
         public void DataBarangRusakUC_Load(object sender, EventArgs e)
         {
-            DataSet dataBarang = helper.GetData("select id_log_barang, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang, tanggal_barang from log_barang where kondisi_barang='Rusak'");
+            string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            DataSet dataBarang = helper.GetData("select id_log_barang, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang, tanggal_barang from log_barang where kondisi_barang='Rusak' and tanggal_barang='" + theDate + "'");
             dataGridView1.DataSource = dataBarang.Tables[0];
         }
 
@@ -34,7 +35,7 @@ namespace InventoryApp.UserController
         {
             string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             Console.WriteLine(theDate);
-            DataSet dataLog = helper.GetData("select id_log_barang, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang, tanggal_barang from log_barang where kondisi_barang='Rusak' and tanggal_barang='" + dateTimePicker1.Text + "'");
+            DataSet dataLog = helper.GetData("select id_log_barang, kode_barang, nama_barang, status_barang, stok_barang, kondisi_barang, tanggal_barang from log_barang where kondisi_barang='Rusak' and tanggal_barang='" + theDate + "'");
             dataGridView1.DataSource = dataLog.Tables[0];
         }
     }
